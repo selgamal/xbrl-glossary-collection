@@ -9,7 +9,7 @@ from pprint import pprint as pp
 
 doc_intro = {
     "doc-title": "XBRL Glossary Collection",
-    "doc-abstract": "Terms used in XBRL collected from different sources with definition and translation.",
+    "doc-abstract": "Terms used in XBRL collected from different sources with definitions and translations.",
     "label-hide-intro-cb": "Show Glossary Only",
     "about-title": "About this document",
     "about-para-1": "<strong>XBRL</strong> (eXtensible Business Reporting Language) is an XML-based markup language used for exchanging business reports in a standard machine-readable format. <strong>XBRL</strong> is also referred to as <strong>Digital Reporting, Electronic Reporting, Structured Reporting and Tagged Reports</strong>.",
