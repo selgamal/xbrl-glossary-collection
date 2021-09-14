@@ -1,0 +1,79 @@
+{
+    "1": {
+            "source": "XBRL Specifications",
+            "sub-type": "XBRL 2.1",
+            "base-link": "https://www.xbrl.org/Specification/XBRL-2.1/REC-2003-12-31/XBRL-2.1-REC-2003-12-31+corrected-errata-2013-02-20.html",
+            "xpointer": "#_1.4",
+            "xpath-to-terms-and-definitions": "//*[@id=\"_1.4\"]/following-sibling::table[1]//tr[not(th)]",
+            "xpath-to-terms": "./td[1]",
+            "xpath-to-definitions": "./td[2]",
+            "is-dl": false,
+            "source-group": "1"
+    },
+    "2": {
+            "source": "XBRL Specifications",
+            "sub-type": "XBRL Dimensions 1.0",
+            "base-link": "https://www.xbrl.org/specification/dimensions/rec-2012-01-25/dimensions-rec-2006-09-18+corrected-errata-2012-01-25-clean.html",
+            "xpointer": "#sec-terminology",
+            "xpath-to-terms-and-definitions": "//*[@id=\"sec-terminology\"]/following-sibling::table[1]//tr[not(th)]",
+            "xpath-to-terms": "./td[1]",
+            "xpath-to-definitions": "./td[2]",
+            "is-dl": false,
+            "source-group": "1"
+    },
+    "3": {
+            "source": "XBRL Specifications",
+            "sub-type": "XBRL Global Ledger 2015",
+            "base-link": "https://www.xbrl.org/int/gl/2015-03-25/GLTFTA-REC-2015-03-25.html",
+            "xpointer": "#section-terminology",
+            "xpath-to-terms-and-definitions": "//*[@id=\"section-terminology\"]/following-sibling::table[1]//tr[not(th)]",
+            "xpath-to-terms": "./td[1]",
+            "xpath-to-definitions": "./td[2]",
+            "is-dl": false,
+            "source-group": "1"
+    },
+    "4": {
+            "source": "XBRL Specifications",
+            "sub-type": "Table Linkbase 1.0",
+            "base-link": "https://www.xbrl.org/Specification/table-linkbase/REC-2014-03-18+errata-2018-07-17/table-linkbase-REC-2014-03-18+corrected-errata-2018-07-17.html",
+            "xpointer": null,
+            "xpath-to-terms-and-definitions": "//*[@class=\"definition\"]",
+            "xpath-to-terms": "./*[@class=\"term\"]",
+            "xpath-to-definitions": ".",
+            "is-dl": false,
+            "source-group": "1"
+    },
+    "5": {
+            "source": "XBRL US",
+            "sub-type": "XBRL Taxonomy Development Handbook",
+            "base-link": "https://xbrlus.github.io/docs/tdh.html",
+            "xpointer": "#a_Toc45794963",
+            "xpath-to-terms-and-definitions": "//p[count(preceding-sibling::p[@class=\"tdh_243\" and contains(text(), \"Glossary\")])=1 and count(following-sibling::p[@class=\"tdh_243\" and contains(text(), \"Index\")])=1]",
+            "xpath-to-terms": "./b | ./*[count(following-sibling::b)=1 and count(preceding-sibling::b)=1]",
+            "xpath-to-definitions": ".",
+            "is-dl": false,
+            "source-group": "2"
+    },
+    "6": {
+            "source": "XBRL International",
+            "sub-type": "XBRL Glossary",
+            "base-link": "https://www.xbrl.org/guidance/xbrl-glossary/",
+            "xpointer": null,
+            "xpath-to-terms-and-definitions": "//dl",
+            "xpath-to-terms": "./dt",
+            "xpath-to-definitions": "./dd",
+            "is-dl": true,
+            "source-group": "3"
+    },
+    "7": {
+            "source": "SEC",
+            "sub-type": "XBRL Glossary of Terms",
+            "base-link": "https://www.sec.gov/page/osd_xbrlglossary",
+            "xpointer": null,
+            "xpath-to-terms-and-definitions": "//dl",
+            "xpath-to-terms": "./dt",
+            "xpath-to-definitions": "./dd",
+            "is-dl": true,
+            "source-group": "4"
+    }
+}

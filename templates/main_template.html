@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" dir="{{ dir }}" style="line-height: 1.5;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XBRL Glossary Collection</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="data:text/javascript;base64,{{ allLangs }}"></script>
+    <link rel="stylesheet" href="data:text/css;base64,{{ cssFile }}">
+    <script type="text/javascript" src="data:text/javascript;base64,{{ jsFile }}"></script>
+</head> 
+ 
+<body>
+    <header id="header-elt" class="fixed-header">
+        <div id='header-first' style="position: relative;">
+            <h1 id="doc-title" class="title" lang="en">{{intro['doc-title'][lang] or intro['doc-title']['en']}}</h1>
+            <select name="langs-menu" id="langs-menu" onchange="changeLangAll(this)">
+                <option value="en" selected>en</option>
+                {% for lang in langs %}
+                {% if not lang == 'en': %}
+                <option value="{{lang}}">{{lang}}</option>
+                {% endif %}
+                {% endfor %}
+            </select>
+        </div>
+        <div>
+            <p id="doc-abstract" class="abstract" lang="en">
+                {{intro['doc-abstract'][lang] or intro['doc-abstract']['en']}}
+            </p>
+        </div>
+        <div id="credits" style="display: flex;justify-content: center;" dir="auto">
+            <h4 id="author" style="margin:3px;">{{author}}</h4>
+            <a href="https://www.linkedin.com/in/sherif-elgamal/" style="margin: 0 2px;" target="_blank" class="" id="linkedin">
+                {{icons['linkedin']}}
+            </a>
+            <a href="https://github.com/selgamal" style="margin: 0 2px;" target="_blank" class="" id="github">
+                {{icons['github']}}
+            </a>
+            <a href="mailto:selgamal@outlook.com" style="margin: 0 2px;" target="_blank" class="" id="email">
+                {{icons['email']}}
+            </a>
+            <div id="translators">
+                <span style="font-weight: 600;">Translation Credits</span>
+                <div style="position: relative;">
+                    <ul id="translators-list" dir='ltr'>
+                        {% for t in translators: %}
+                        <li>{% if t.get('name', ''): %}
+                            <span id="author" data-lang="{{t.get('lang', '')}}" style="margin:3px;">{{t.get('name', '')}}</span>
+                            {% if t.get('linkedin',''): %}
+                            <a href="{{t.linkedin}}" style="margin: 0 2px;" target="_blank" class="" id="linkedin">
+                                {{icons['linkedin']}}
+                            </a>
+                            {% endif %}
+
+                            {% if t.get('github'): %}
+                            <a href="{{t.github}}" style="margin: 0 2px;" target="_blank" class="" id="github">
+                                {{icons['github']}}
+                            </a>
+                            {% endif %}
+                            {% if t.get('email',''): %}
+                            <a href="mailto:{{t.email}}" style="margin: 0 2px;" target="_blank" class="" id="email">
+                                {{icons['email']}}
+                            </a>
+                            {% endif %}
+                            {% endif %}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <h5 id="update-date" style="text-align: center;margin: 0;" data-updated="{{lastupdateDate}}" title="Last update {{lastupdateDate}}">{{lastUpdateDateString}}</h5>
+        <div id="hide-intro-container">
+            <input type="checkbox" id="hide-intro-cb" name="hide-intro-cb" onchange="hideIntro(this)">
+            <label id="label-hide-intro-cb" for="hide-intro-cb">{{intro['label-hide-intro-cb'][lang] or intro['label-hide-intro-cb']['en']}}</label>
+        </div>
+        <hr style="margin-bottom: 0; min-width: 720px;">
+    </header>
+    <div id="container-elt" class="container">
+        <div id="intro-part">
+            <div id="about-section">
+                <h3 id="about-title">{{intro['about-title'][lang] or intro['about-title']['en']}}</h3>
+                <p id="about-para-1">{{intro['about-para-1'][lang] or intro['about-para-1']['en']}}</p>
+                <p id="about-para-2">{{intro['about-para-2'][lang] or intro['about-para-2']['en']}}</p>
+                <p id="sources-used-title">{{intro['sources-used-title'][lang] or intro['sources-used-title']['en']}}</p>
+                <ul>
+                    <li>
+                        <p>
+                            <a id="sources-li-1-1" href="https://xbrl.us/xbrl-reference/tdh/" target="_blank">{{intro['sources-li-1-1'][lang] or intro['sources-li-1-1']['en']}}</a>
+                            <span id="sources-li-1-2">{{intro['sources-li-1-2'][lang] or intro['sources-li-1-2']['en']}}</span>
+                            <a href="https://xbrl.us/" target="_blank">XBRL US:</a>
+                            <span id="sources-li-1-3">{{intro['sources-li-1-3'][lang] or intro['sources-li-1-3']['en']}}</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a href="https://www.xbrl.org/guidance/xbrl-glossary/" target="_blank">XBRL Glossary</a>
+                            <span id="sources-li-2-1">{{intro['sources-li-2-1'][lang] or intro['sources-li-2-1']['en']}}</span>
+                            <a href="https://www.xbrl.org" target="_blank">XBRL International:</a>
+                            <span id="sources-li-2-2">{{intro['sources-li-2-2'][lang] or intro['sources-li-2-2']['en']}}</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a id="sources-li-3-1" href="https://www.sec.gov/page/osd_xbrlglossary" target="_blank">{{intro['sources-li-3-1'][lang] or intro['sources-li-3-1']['en']}}:</a>
+                            <span id="sources-li-3-2">{{intro['sources-li-3-2'][lang] or intro['sources-li-3-2']['en']}}</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a id="sources-li-4-1" href="https://specifications.xbrl.org/specifications.html" target="_blank">{{intro['sources-li-4-1'][lang] or intro['sources-li-4-1']['en']}}:</a>
+                            <span id="sources-li-4-2">{{intro['sources-li-4-2'][lang] or intro['sources-li-4-2']['en']}}</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div id="translations">
+                    <h3 id="translation-section-title">{{intro['translation-section-title'][lang] or intro['translation-section-title']['en']}}</h3>
+                    <p><span id="translation-section-1">{{intro['translation-section-1'][lang] or intro['translation-section-1']['en']}}</span> 
+                        <a id="translation-section-2" href="#lang-menu">{{intro['translation-section-2'][lang] or intro['translation-section-2']['en']}}</a> 
+                        <span id="translation-section-3">{{intro['translation-section-3'][lang] or intro['translation-section-3']['en']}}</span>
+                        <a id="translation-section-4" href="https://github.com/selgamal/xbrl-glossary-collection" target="_blank">{{intro['translation-section-4'][lang] or intro['translation-section-4']['en']}}</a> 
+                        <span id="translation-section-5">{{intro['translation-section-5'][lang] or intro['translation-section-5']['en']}}</span>
+                    </p>
+                    </div>
+                <div id="notes-on-translation-for-language" class="hidden">
+                    <h3 id="lang-notes-section-title">{{intro['lang-notes-section-title'][lang] or intro['lang-notes-section-title']['en']}}</h3>
+                    <p id="lang-notes-section-text">{{intro['lang-notes-section-text'][lang] or intro['lang-notes-section-text']['en']}}</p>
+                </div>
+                <div id="glossary">
+                    <h3 id="glossary-section-title">{{intro['glossary-section-title'][lang] or intro['glossary-section-title']['en']}}</h3>
+                    <p id="glossary-section-1">{{intro['glossary-section-1'][lang] or intro['glossary-section-1']['en']}}</p>
+                    <p id="glossary-section-2">{{intro['glossary-section-2'][lang] or intro['glossary-section-2']['en']}}</p>
+                </div>
+            </div>
+            <div id="terms-section" dir="ltr">
+                <div id="search-header">
+                    <div id="search-container">
+                        <button id="sort-en" data-sorted="0" type="sort" onclick="sortFunc(true, this)" title="{{intro['title-8'][lang] or intro['title-8']['en']}}">
+                            <i class="fa fa-sort"></i>
+                        </button>
+                        <select name="en" id="langs" title="{{intro['title-1'][lang] or intro['title-1']['en']}}" onchange="showTranslatedTerms(this.value)">
+                            <option value="en" selected>en (English)</option>
+                            {% for lang, v in langs.items() %}
+                            {% if not lang == 'en': %}
+                            <option value="{{lang}}">{{ '{} ({})'.format(lang, v.name) }}</option>
+                            {% endif %}
+                            {% endfor %}
+                        </select>
+                        <select name="all" id="select-sources" title="{{intro['title-6'][lang] or intro['title-6']['en']}}" onchange="filterSources(this.value)">
+                            <option value="0" selected>All</option>
+                            <option value="1">XBRL Specifications</option>
+                            <option value="2" title="XBRL Taxonomy Development Handbook">TDH</option>
+                            <option value="3">XBRL.org Glossary</option>
+                            <option value="4" >SEC Glossary</option>
+                        </select>
+                        <form id="hide-defs-container">
+                            <input type="checkbox" id="hide-defs-cb" name="hide-defs-cb" onchange="hideDefs(this)">
+                            <label id="label-hide-defs-cb" for="hide-defs-cb">{{intro['label-hide-defs-cb'][lang] or intro['label-hide-defs-cb']['en']}}</label>
+                          </form>
+                        <form dir="ltr" id="search-en" style="display: flex;" title="{{intro['title-2'][lang] or intro['title-2']['en']}}" onkeyup="searchTerms()">
+                            <input type="text" id="search-en-input" placeholder="{{intro['placeholder-1'][lang] or intro['placeholder-1']['en']}}" name="search-en-input">
+                          </form>
+                        <form dir="{{dir}}" id="search-lang" style="display: flex;" title="{{intro['title-3'][lang] or intro['title-3']['en']}}" onkeyup="searchTerms(false)">
+                            <input type="text" id="search-lang-input" placeholder="{{intro['placeholder-2'][lang] or intro['placeholder-2']['en']}}" name="search-lang-input">
+                          </form>
+                          <button id="download-button" type="download" title="{{intro['title-7'][lang] or intro['title-7']['en']}}" onclick="makeLangsFile()">
+                              <!-- <a href="https://github.com/selgamal/xbrl-glossary-collection/blob/master/json/all-langs.json" style="color: black;"target="_blank"> -->
+                                <i class="fa fa-download">
+                                </i>
+                            </a>
+                        </button>
+                        <button id="sort-lang" data-sorted="0" type="sort" onclick="sortFunc(false, this)" title="{{intro['title-9'][lang] or intro['title-9']['en']}}">
+                            <i class="fa fa-sort"></i>
+                        </button>
+                    </div>
+                    <hr style="margin-bottom: 0;">
+                </div>
+                <div id="terms-container">
+                    {% for id, term in glossary.items() %}
+                    {% if not id in ignored %}
+                    <div class="glossary-term" id="{{ id }}" data-source-group="{{term['en']['source-group']}}" data-index="{{loop.index}}">
+                        <div class="term-container">
+                            <div class="term-en">
+                                <dt class="term-name-en" data-term-name="{{ term['en']['term-name'] }}" lang="en">{{ term['en']['term-name-html'] }}</dt>
+                                <dd class="term-def-en" lang="en">{{ term['en']['term-definition-html'] }}</dd>
+                            </div>
+                            <div class="term-lang empty-translation hidden" dir="">
+                                <dt class="term-name-lang" data-term-name="{{term[lang]['term-name']}}" lang="">--</dt>
+                                <span class="term-name-lang-variants" lang="" title="{{intro['title-4'][lang] or intro['title-4']['en']}}">[--]</span>
+                                <dd class="term-definition-lang" lang="">--</dd>
+                                <span class="term-translation-note" lang="" title="{{intro['title-5'][lang] or intro['title-5']['en']}}">
+                                    <strong id="trans-note" class="note-name">{{intro['trans-note'][lang]}}</strong><span class="translation-notes" lang="">--</span></span>
+                            </div>
+                        </div>
+                        <span class="term-attachments">
+                            <a href="{{sources[term['en']['source-key']]['base-link']}}" target="_blank" class="term-source" title="source">{{ sources[term['en']['source-key']]['source'] }}</a>
+                            <span href="" class="term-tag" title="tag">{{sources[term['en']['source-key']]['sub-type']}}</span>
+                        </span>
+                        <hr>
+                    </div>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+                </div>
+    </div>
+
+</body>
+
+</html>

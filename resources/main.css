@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo&family=Lato&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
+
+body {
+  font-family: cairo, Lato, Roboto, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  color: #333;
+  box-sizing: border-box;
+  text-align: justify;
+  font-size: 105%;
+  min-height: 1000px;
+  min-width: 800px;
+}
+
+.not-available {
+  color: #afafaf;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+blockquote {
+  padding: 0px 12px;
+  margin: 0 0 20px;
+  font-size: 17.5px;
+  border-left: 5px solid #eee;
+}
+
+blockquote .small:before,
+blockquote footer:before,
+blockquote small:before {
+  content: "\2014 \00A0";
+}
+
+.container {
+  max-width: 75%;
+  min-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h1.title {
+  font-size: 38px;
+}
+.title {
+  width: 95%;
+  float: left;
+  text-align: center;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p.abstract {
+  margin: auto;
+  width: 90%;
+  text-align: center;
+}
+
+#search-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type="text"]:focus-visible,
+select:focus-visible {
+  outline: none;
+}
+
+input[type="text"],
+button,
+select {
+  padding-left: 5px;
+  font-size: 0.9em;
+  border: none;
+  background: whitesmoke;
+}
+
+button:hover {
+  background: #ccc;
+}
+
+button {
+  background: #e6e6e6;
+  width: 2em;
+}
+
+#langs option,
+#langs-menu option {
+  font-size: 0.9em;
+}
+
+#langs-menu {
+  cursor: pointer;
+  padding: 5px;
+  float: right;
+  border-radius: 3px;
+  margin-top: 2em;
+  text-align: center;
+  position: absolute;
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Chrome */
+  -webkit-appearance: none;
+}
+
+/* For IE10 */
+#langs-main::-ms-expand {
+  display: none;
+}
+
+#label-header-checkbox,
+#hide-intro-cb {
+  cursor: pointer;
+}
+
+.term-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.term-en,
+.term-lang {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.term-lang {
+  background-color: #f7f7f7;
+  margin-left: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.term-en {
+  margin-right: 5px;
+}
+
+hr {
+  margin-top: 10px;
+  border: 1px solid #f7f7f7;
+  border-radius: 4px;
+}
+
+.term-attachments {
+  margin-top: 10px;
+  font-size: 0.8em;
+}
+
+dt {
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+.term-lang dt {
+  display: inline-block;
+}
+
+.term-translation-note,
+.term-name-lang-variants,
+.empty-translation {
+  font-size: 0.8em;
+  color: #c2c2c2;
+}
+
+.term-translation-note:hover,
+.term-name-lang-variants:hover {
+  color: inherit;
+  font-size: 0.9em;
+}
+
+.term-attachments * {
+  background-color: whitesmoke;
+  padding: 0px 8px;
+  border-radius: 20px;
+}
+
+.hidden,
+.filtered-out,
+.searched-out {
+  display: none;
+}
+
+#hide-intro-container {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+header {
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.fixed-header {
+  position: fixed;
+  width: 75%;
+  min-width: 720px;
+  background-color: white;
+  margin: auto;
+}
+
+#search-header.fixed-header {
+  padding-top: 10px;
+}
+
+#translators {
+  margin: 0 2px;
+  font-size: 0.75em;
+  background: whitesmoke;
+  padding: 5px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#translators:hover {
+  background-color: rgb(187, 187, 187);
+  /* color: white; */
+}
+
+#translators-list {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  border: 1px solid #f8f8f8;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  position: absolute;
+  width: max-content;
+  display: none;
+}
+
+#translators-list li {
+  list-style: none;
+  display: flex;
+  padding: 5px;
+}
+
+#translators-list li span {
+  line-height: 1;
+}
+
+#translators-list li:hover {
+  background-color: #f2f2f2;
+
+}
+
+#translators-list li span:before{
+  content: attr(data-lang);
+  margin-right: 5px;
+  font-weight: 700;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+#translators:hover #translators-list {
+  display: block;
+}
+
+#download-button {
+  cursor: pointer;
+}

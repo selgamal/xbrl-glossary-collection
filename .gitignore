@@ -1,0 +1,6 @@
+# Python
+.venv*
+.vscode
+# R Script
+/json-temp
+/dump
