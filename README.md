@@ -1,5 +1,7 @@
 # XBRL Glossary Collection
-A collection of XBRL terminology and definitions in one place, along with translations if available.
+A collection of XBRL terminology and definitions in one place, along with translations if available.  
+
+[![XBRL Glossary Collection](resources/glossary2.png "XBRL Glossary Collection")](https://selgamal.github.io/xbrl-glossary-collection/xbrl-glossary-collection.html)
 
 Initial translation is in Arabic (ar-EG), but more translations can be added as follows:
 
