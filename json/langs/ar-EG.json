@@ -192,7 +192,7 @@
             "term-name-lang": "مفهوم بديل",
             "term-name-lang-variants": [],
             "term-definition-lang": "هو المفهوم المستهدف (جهة الهدف) في قوس ربط تعريفي بدور http://www.xbrl.org/2003/arcrole/essence-alias. عنصري الجوهر والبديل هما عنصرين متساويين من جهة التعريف، بمعني ان القيمة المقبولة لعنصر بديل هي ايضا مقبولة لعنصر جوهر الذي يرتبط به في علاقة ربط من نوع essence-alias.",
-            "translation-notes": ""
+            "translation-notes": "مفهوم جوهر ومفهوم بديل يشيران هما مترادفات ويتم ربطهم بقوس من نوع essence-alias."
         },
         "d984541384bdb22d801503dfe52a307f": {
             "term-name": "Alias Item",
@@ -200,7 +200,7 @@
             "term-name-lang": "عنصر تقرير بديل",
             "term-name-lang-variants": [],
             "term-definition-lang": "عنصر تقرير لمفهوم بديل.",
-            "translation-notes": ""
+            "translation-notes": "مفهوم جوهر ومفهوم بديل يشيران هما مترادفات ويتم ربطهم بقوس من نوع essence-alias."
         },
         "e06292e1810be6b6228f7275b047edff": {
             "term-name": "Arc",
@@ -223,7 +223,7 @@
             "term-definition": "Relationships among elements in an XBRL instance: using the terminology of [XPath 1.0], for any element E, another element F is its: ancestor if and only if F appears on the ancestor axis of E child if and only if F appears on the child axis of E descendant if and only if F appears on the descendant axis of E grandparent if and only if F is the parent of the parent of E parent if and only if F appears on the parent axis of E sibling if and only if F appears on the child axis of the parent of E and is not E itself uncle if and only if F is a sibling of the parent of E",
             "term-name-lang": "أصل، تابع، فرع، سلف، اصل مباشر، شقيق، عم",
             "term-name-lang-variants": [],
-            "term-definition-lang": " مصطلحات تقنية تصف العلاقات بين عناصر XBRL بأستخدام مصطلحات XPath 1.0 ويكون الشكل العام للعلاقات على هيئة شجرة لها جزر وهو العنصر الاص الذي يحتوي جميع العناصر الاخرى والفروع وهي العناصر في المستوى الاوسط والاوراق وهي العناص في اخر مستوى.",
+            "term-definition-lang": " مصطلحات تقنية تصف العلاقات بين عناصر XBRL بأستخدام مصطلحات XPath 1.0 ويكون الشكل العام للعلاقات على هيئة شجرة لها جزر وهو العنصر الاصل الذي يحتوي جميع العناصر الاخرى والفروع وهي العناصر في المستوى الاوسط والاوراق وهي العناص في اخر مستوى.",
             "translation-notes": ""
         },
         "9a6a59f2df13306669824aef30619cf0": {
@@ -255,7 +255,7 @@
             "term-definition": "An element derived from xl:arc that is not defined in this specification, Specifically, not one of: link:presentationArc, link:calculationArc, link:labelArc, link:referenceArc, or link:definitionArc.",
             "term-name-lang": "عنصر قوس ربط مستحدث",
             "term-name-lang-variants": [],
-            "term-definition-lang": "",
+            "term-definition-lang": "عنصر مشتق من xl:arc لم يتم تعريفه في موصفات XBRL. على وجه الخصوص ليس ضمن: link:presentationArc, link:calculationArc, link:labelArc, link:referenceArc, or link:definitionArc.",
             "translation-notes": ""
         },
         "465b9a5d23944c3d8f79ca15df171fe4": {
@@ -263,7 +263,7 @@
             "term-definition": "An element derived from xl:link that is not defined in this specification. Specifically, not one of: link:presentationLink, link:calculationLink, link:labelLink, link:referenceLink, or link:definitionLink.",
             "term-name-lang": "عنصر رابط ممتد مستحدث",
             "term-name-lang-variants": [],
-            "term-definition-lang": "",
+            "term-definition-lang": "عنصر مشتق من xl:link لم يتم تعريفه في موصفات XBRL. على وجه الخصوص ليس ضمن: link:presentationLink, link:calculationLink, link:labelLink, link:referenceLink, or link:definitionLink.",
             "translation-notes": ""
         },
         "5f70e4f2da9217f8c62027dc9f82f037": {
@@ -322,23 +322,23 @@
             "term-definition": "The Concept at the \"from\" end of a definition arc with arc role http://www.xbrl.org/2003/arcrole/essence-alias. Alias and essence concepts are definitionally equivalent in the sense that valid values for an alias concept are always valid values for essence concepts to which they are related by an essence-alias relationship.",
             "term-name-lang": "عنصر الجوهر",
             "term-name-lang-variants": [],
-            "term-definition-lang": "",
-            "translation-notes": ""
+            "term-definition-lang": "عنصر من جهة المصدر لقوس تعريفي من نوع http://www.xbrl.org/2003/arcrole/essence-alias. مفاهيم الجوهر والبديل متساويات من جهة التعريف، بمعنى ان القيمة الصالحة للمفهوم البديل دئما تصلح للمفهوم الجوهر",
+            "translation-notes": "مفهوم جوهر ومفهوم بديل يشيران هما مترادفات ويتم ربطهم بقوس من نوع essence-alias."
         },
         "c955e73d52d9850c415d59eeba0d6c24": {
             "term-name": "Essence Item",
             "term-definition": "An item in an instance whose element is an essence concept.",
             "term-name-lang": "عنصر تقرير جوهر",
             "term-name-lang-variants": [],
-            "term-definition-lang": "",
-            "translation-notes": ""
+            "term-definition-lang": "عنصر تقرير يكون المفهوم الرتبط به هو مفهوم جوهر.",
+            "translation-notes": "مفهوم جوهر ومفهوم بديل يشيران هما مترادفات ويتم ربطهم بقوس من نوع essence-alias."
         },
         "e795f5d83d51fef3426f9a04025e30f8": {
             "term-name": "Extended Link",
             "term-definition": "An extended link is an element identified as an extended link using the syntax defined in the XML Linking Language [XLINK]. Extended links represent a set of relationships between information that they contain and information contained in third party documents. See Section 3.5.2.4 for more details.",
             "term-name-lang": "رابط ممتد",
             "term-name-lang-variants": [],
-            "term-definition-lang": "",
+            "term-definition-lang": "عنصر تم تعريفه كا رابط ممتد باستخدام الصيغة المحددة قي لغة XML للروابط [XLINK]. تمثل الروابط الممتدة مجموعة من العلاقات بين المعلومات التي تحتويها الروابط ومعلومات اخرى في ملفات خارجية.",
             "translation-notes": ""
         },
         "240bedd618f9b8c3f0bfc7c94ee264ad": {
@@ -346,15 +346,15 @@
             "term-definition": "Facts can be simple, in which case their values must be expressed as simple content (except in the case of simple facts whose values are expressed as a ratio), and facts can be compound, in which case their value is made up from other simple and/or compound facts. Simple facts are expressed using items (and are referred to as items in this specification) and compound facts are expressed using tuples (and are referred to as tuples in this specification).",
             "term-name-lang": "حقيقة",
             "term-name-lang-variants": [],
-            "term-definition-lang": "",
-            "translation-notes": ""
+            "term-definition-lang": "قد تكون الحقائق بسيطة، في هذه الحالة يتم التعبير عن القيمة بمحتوى بسيط (simple content مصطلح تقني) فيما عدا الحقائق البسيطة التي يتم التعبير عن قيمها في صورة نسبة، ويمكن انتكون الحقائق مركبة، و في هذه الحالة يتم انشاء قيمها من مجموعة حقائق اخرى بسيطة و/أو مركبة. يتم التعبير عن الحقائق البسيطة بإستخدام \"عنصر التقرير\" (ويتم الإشارة إليها بمصطلح عنصر تقرير Item) والحقائق المركبة يتم التعبير عنها بإستخدام المجموعات Tuples (ويتم الاشارة إليها بلفظ عنصر تقرير مجموعة tuples).",
+            "translation-notes": "الحقائق هنا بمعنى القيم المجودة في التقارير، مثلا رصيد النقدية 100 هذه تسمى حقيقة، وذلك ينطبق على الايضاحات النصية ايضاً. "
         },
         "afd2ba2e0dd93795d8dbbd874e292359": {
             "term-name": "Instance Namespace",
             "term-definition": "The namespace used for XBRL 2.1 instances, http://www.xbrl.org/2003/instance",
             "term-name-lang": "نطاق أسم التقرير",
             "term-name-lang-variants": [],
-            "term-definition-lang": "",
+            "term-definition-lang": "نطاق الاسم المستخدم لتقرير بصيغة XBRL 2.1  http://www.xbrl.org/2003/instance",
             "translation-notes": ""
         },
         "8a97b0d3503c69a08fed4830a2785ab2": {
@@ -362,15 +362,15 @@
             "term-definition": "An item is an element in the substitution group for the XBRL item element. It contains the value of the simple fact and a reference to the context (and unit for numeric items) needed to correctly interpret that fact. When items occur as children of a tuple, they must also be interpreted in light of the other items and tuples that are children of the same tuple. There are numeric items and non-numeric items, with numeric items being required to document their measurement accuracy and units of measurement.",
             "term-name-lang": "عنصر تقرير",
             "term-name-lang-variants": [],
-            "term-definition-lang": "",
-            "translation-notes": ""
+            "term-definition-lang": "عنصر في مجموعة تبديل \"عنصر تقرير\" في XBRL. يحتوي على قيمة لحقيقة بسيطة ويحتاج إلى مضمون Context ووحدة قياس (في حالة العناصر ذات القيم الرقمية) لتفسير الحقيقة بشكل صحيح. عندما يكون عنصر التقرير ضمن عنصر تقرير مجموعة، يتم تفسيره في ضؤ العناصر الاخرى المشتركة في نفس المجموعة. يوجد عناصر تقارير رقمية وغير رقمية،في حالة العناصر الرقمية يلزم توثيق دقة الرقم ووحدة القياس",
+            "translation-notes": "مجموعة التبديل substituation group هو مصطلح تقني مستخدم في XML هو عبارة عن تصنيف اوتجميع لعناصر تؤدي نفس الغرض تحت مسمى معين."
         },
         "0adeac03e0e3481d191d65c287f597df": {
             "term-name": "Least Common Ancestor",
             "term-definition": "In an instance, the element that is an ancestor of two elements and has no child that also appears on the ancestor axis [XPath 1.0] of those same two elements.",
             "term-name-lang": "أقرب أصل",
             "term-name-lang-variants": [],
-            "term-definition-lang": "",
+            "term-definition-lang": "هو عنصر أصل لعنصرين وليس له اي عناصر تابعة تظهر على محور الاصل [XPath 1.0] لهذين العنصرين. ",
             "translation-notes": ""
         },
         "9783072e5cda0ec355372ca99609014f": {
@@ -378,7 +378,7 @@
             "term-definition": "A linkbase is a collection of XML Linking Language [XLINK] extended links that document the semantics of Concepts in a taxonomy.",
             "term-name-lang": "قاعدة ربط",
             "term-name-lang-variants": [],
-            "term-definition-lang": "",
+            "term-definition-lang": "مجموعة من صياغات لغة XML للربط [XLINK] وتوثق دلالات المفاهيم في المفردات.",
             "translation-notes": ""
         },
         "2ff8e83bfeaa0f3c345688160ec74f15": {
@@ -386,7 +386,7 @@
             "term-definition": "The namespace of XBRL 2.1 linkbases, http://www.xbrl.org/2003/linkbase",
             "term-name-lang": "نطاق أسم قاعدة الربط",
             "term-name-lang-variants": [],
-            "term-definition-lang": "",
+            "term-definition-lang": "نطاق أسم قواعد ربط XBRL 2.1، http://www.xbrl.org/2003/linkbase",
             "translation-notes": ""
         },
         "989a83727c4843ba489ad21f2e3c99fb": {
@@ -394,7 +394,7 @@
             "term-definition": "Locators supply an XPointer [XPOINTER] reference to the taxonomy schema element definitions that uniquely identify each Concept. They provide an anchor for extended link arcs. See Section 3.5.3.7 for more details.",
             "term-name-lang": "المحدد",
             "term-name-lang-variants": [],
-            "term-definition-lang": "",
+            "term-definition-lang": "يزود المحدد مرجع XPointer [XPOINTER] (مصطلح تقني يشير إلى موقع عنصر في ملف XML) لتعريف عنصر مخطط مفردات والتي تحدد بشكل فردي كل مفهوم. ويزود نقطة إرتكاز لأقواس الروابط الممتدة.",
             "translation-notes": ""
         },
         "952d2b5602e2ad58bc749dfcf9f199d1": {
@@ -410,7 +410,7 @@
             "term-definition": "An item that is not a numeric item as defined below. Dates, in particular, are not numeric.",
             "term-name-lang": "عنصر غير رقمي",
             "term-name-lang-variants": [],
-            "term-definition-lang": "",
+            "term-definition-lang": "هو عنصر غير رقمي. التواريخ على وجه الخصوص هي عنصر غير رقمي.",
             "translation-notes": ""
         },
         "e5e67f27665d2eb13b603a9886b8b688": {
@@ -418,7 +418,7 @@
             "term-definition": "An item whose simple content is derived by restriction from the XML Schema primitive types decimal, float or double, or complex content derived by restriction from the XBRL defined type fractionItemType (see Section 5.1.1.3 for details on item types).",
             "term-name-lang": "عنصر رقمي",
             "term-name-lang-variants": [],
-            "term-definition-lang": "",
+            "term-definition-lang": "عنصر يقتصر محتواه البسيط على على الانواع العشرية محددة وغير محددة الاماكن العشرية و نوع double وهي انواع أولية  موجودة في مخطط XML أو محتوى مركب (complex type) مشتق عن طريق التقييد من نوع fractionItemType المعرف في XBRL.",
             "translation-notes": ""
         },
         "94fd1e91d432e354fd3824d4189c7196": {
@@ -426,7 +426,7 @@
             "term-definition": "An instant or duration of time. In business reporting, financial numbers and other facts are reported \"as of\" an instant or for a period of certain duration. Facts about instants and durations are both common.",
             "term-name-lang": "فترة",
             "term-name-lang-variants": [],
-            "term-definition-lang": "",
+            "term-definition-lang": "لحظة او فترة ومنية. في تقارير الاعمال، يتم تضمين الارصدة والحقائق إما \"كما في\" لحضة محددة أو لفترة زمنية محددة. كلى الحقائق المرتبطة بفترة او لحظة وارد وجودها في التقارير المالية.",
             "translation-notes": ""
         },
         "9b59760039d9c30ca5af61048cc0644c": {

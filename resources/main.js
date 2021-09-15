@@ -22,6 +22,9 @@ $(document).ready(function () {
     })
     .css({ color: "black", cursor: "default" });
     $('#hide-defs-cb').prop('checked','true').trigger('change');
+    // testing
+    // $('#langs').val('ar-EG').trigger('change')
+    // $('#hide-intro-cb').prop('checked',true).trigger('change')
 });
 
 function hideIntro(cb) {
