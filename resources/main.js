@@ -433,7 +433,7 @@ function showLangTerms(lang) {
             ? "[" + data[x].join("-") + "]"
             : data[x];
       }
-      innerElt.text(inner_text);
+      x == "term-definition-lang" ? innerElt.html(inner_text) : innerElt.text(inner_text);
       innerElt.attr({ lang: lang });
       if (x == "term-name-lang") {
         innerElt[0].dataset.termName = inner_text;

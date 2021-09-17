@@ -255,7 +255,7 @@
             "term-definition": "An element derived from xl:arc that is not defined in this specification, Specifically, not one of: link:presentationArc, link:calculationArc, link:labelArc, link:referenceArc, or link:definitionArc.",
             "term-name-lang": "عنصر قوس ربط مستحدث",
             "term-name-lang-variants": [],
-            "term-definition-lang": "عنصر مشتق من xl:arc لم يتم تعريفه في موصفات XBRL. على وجه الخصوص ليس ضمن: link:presentationArc, link:calculationArc, link:labelArc, link:referenceArc, or link:definitionArc.",
+            "term-definition-lang": "عنصر مشتق من xl:arc لم يتم تعريفه في موصفات XBRL. على وجه الخصوص ليس ضمن:<br> link:presentationArc, link:calculationArc, link:labelArc, link:referenceArc, or link:definitionArc.",
             "translation-notes": ""
         },
         "465b9a5d23944c3d8f79ca15df171fe4": {
@@ -263,7 +263,7 @@
             "term-definition": "An element derived from xl:link that is not defined in this specification. Specifically, not one of: link:presentationLink, link:calculationLink, link:labelLink, link:referenceLink, or link:definitionLink.",
             "term-name-lang": "عنصر رابط ممتد مستحدث",
             "term-name-lang-variants": [],
-            "term-definition-lang": "عنصر مشتق من xl:link لم يتم تعريفه في موصفات XBRL. على وجه الخصوص ليس ضمن: link:presentationLink, link:calculationLink, link:labelLink, link:referenceLink, or link:definitionLink.",
+            "term-definition-lang": "عنصر مشتق من xl:link لم يتم تعريفه في موصفات XBRL. على وجه الخصوص ليس ضمن:<br> link:presentationLink, link:calculationLink, link:labelLink, link:referenceLink, or link:definitionLink.",
             "translation-notes": ""
         },
         "5f70e4f2da9217f8c62027dc9f82f037": {
@@ -271,7 +271,7 @@
             "term-definition": "A element derived from xl:resource that is not defined in this specification, Specifically, not one of: one of link:label, link:reference, or link:footnote.",
             "term-name-lang": "عنصر مصدر مستحدث",
             "term-name-lang-variants": [],
-            "term-definition-lang": "عنصر مشتق من نوع xl:resource ولم يتم تعريفه في المواصفات، على وجه التحديد ليس ضمن: link:label, link:reference, or link:footnote.",
+            "term-definition-lang": "عنصر مشتق من نوع xl:resource ولم يتم تعريفه في المواصفات، على وجه التحديد ليس ضمن:<br> link:label, link:reference, or link:footnote.",
             "translation-notes": ""
         },
         "7e49e8bcff08e8c82dc516f08b618f5f": {
@@ -434,7 +434,7 @@
             "term-definition": "Parent-equal: instance items or tuples having the same parent. For a formal definition, see Section 4.10 below.",
             "term-name-lang": "متساوي الاصل المباشر",
             "term-name-lang-variants": [],
-            "term-definition-lang": "",
+            "term-definition-lang": "عناصر او عناصر مجموعة في التقرير لديها نفس الاصل المباشر.",
             "translation-notes": ""
         },
         "cefb3e3d36621b283dc69c16306d8e5e": {
@@ -450,7 +450,7 @@
             "term-definition": "The root of an XBRL instance is the <xbrl> element. In principle, it is possible to embed an XBRL instance in any XML document. In this case, the <xbrl> element is the container for the XBRL instance.",
             "term-name-lang": "عنصر الجزر للتقرير",
             "term-name-lang-variants": [],
-            "term-definition-lang": "",
+            "term-definition-lang": "عنصر الجزر لتقرير XBRL هو <xbrl>.يمكن تضمين تقرير XBRL في ملف XML. في هذه الحالة يكون عنصر <xbrl> هو الوعاء الذي يحتوي تقرير XBRL.",
             "translation-notes": ""
         },
         "5cbc95670e725f03aab45d0ad38019cd": {
@@ -458,7 +458,7 @@
             "term-definition": "Structure-equal: XML nodes that are either equal in the XML value space, or whose XBRL-relevant sub-elements and attributes are s-equal. For a formal definition, see Section 4.10 below.",
             "term-name-lang": "متساوي الهيكل",
             "term-name-lang-variants": [],
-            "term-definition-lang": "",
+            "term-definition-lang": "عقد XML التي تكون متساوية القيمة في نطاق XML او ان عناصرها التابعة وسماتها الخاصة بالـXBRL متساوية الهيكل.",
             "translation-notes": ""
         },
         "f90e04a351389ae301eb08c4fffef0dd": {
@@ -466,7 +466,7 @@
             "term-definition": "An element derived from xl:arc that is defined in this specification, Specifically, one of: link:presentationArc, link:calculationArc, link:labelArc, link:referenceArc, or link:definitionArc.",
             "term-name-lang": "عنصر قوس معرف في المواصفات",
             "term-name-lang-variants": [],
-            "term-definition-lang": "",
+            "term-definition-lang": "عصر مشتق من xl:arc تم تعريفه في مواصفات XBRL، علي وجه الخصوص يكون واحد من:<br>link:presentationArc, link:calculationArc, link:labelArc, link:referenceArc, or link:definitionArc.",
             "translation-notes": ""
         },
         "e7c4ff78d1b5b1f978cd7acaeffbf222": {
@@ -474,7 +474,7 @@
             "term-definition": "An element derived from xl:link that is defined in this specification. Specifically, one of: link:presentationLink, link:calculationLink, link:labelLink, link:referenceLink, or link:definitionLink.",
             "term-name-lang": "عنصر رابط ممتد معرف في المواصفات",
             "term-name-lang-variants": [],
-            "term-definition-lang": "",
+            "term-definition-lang": "عصر مشتق من xl:link تم تعريفه في مواصفات XBRL، علي وجه الخصوص يكون واحد من:<br>link:presentationLink, link:calculationLink, link:labelLink, link:referenceLink, or link:definitionLink.",
             "translation-notes": ""
         },
         "5ba358bb8c863e8a587bd3fc0be2b7ef": {
@@ -482,7 +482,7 @@
             "term-definition": "A element derived from xl:resource that is defined in this specification, Specifically, one of: link:label, link:reference, or link:footnote.",
             "term-name-lang": "عنصر مصدر معرف في المواصفات",
             "term-name-lang-variants": [],
-            "term-definition-lang": "",
+            "term-definition-lang": "عصر مشتق من xl:resource تم تعريفه في مواصفات XBRL، علي وجه الخصوص يكون واحد من:<br>link:label, link:reference, or link:footnote.",
             "translation-notes": ""
         },
         "7b8f7bf495d03cbd435930cde4e757a6": {
@@ -498,7 +498,7 @@
             "term-definition": "A taxonomy schema is an XML Schema [XML Schema Structures]. A large part of many taxonomy schemas is given over to the definition of the syntax for the Concepts in that taxonomy. Section 3.1, Section 5 and Section 5.1 address this in more detail.",
             "term-name-lang": "مخطط المفردات",
             "term-name-lang-variants": [],
-            "term-definition-lang": "",
+            "term-definition-lang": "مخطط XML [هيكل مخطط XML]. يتم تخصيص جزء كبير من مخططات المفردات لتعريف صيغ المفردات في هذه المفردات.",
             "translation-notes": ""
         },
         "3c8b2491cd13760951cdeb5a00fe81f3": {
@@ -514,15 +514,15 @@
             "term-definition": "Units are XML fragments that occur as children of the root element in XBRL instances. They document the unit of measure for numeric items. Each <unit> element is only capable of documenting a single unit of measurement.",
             "term-name-lang": "وحدة قياس",
             "term-name-lang-variants": [],
-            "term-definition-lang": "",
+            "term-definition-lang": "جزيئات XML وتكون تابعة لعنصر الجزر في تقرير XBRL. وتمثل وحدة قياس عناصر التقرير ذات الطبيعة الرقمية. كل عنصر <unit> يحتوي على تعريف وحدة قياس واحدة فقط.",
             "translation-notes": ""
         },
         "16ce38a2c0a2129b29f60d6794f00afc": {
             "term-name": "U-Equal",
             "term-definition": "Unit-equal. u-equal numeric items having the same units of measurement. For a formal definition, see Section 4.10 below.",
-            "term-name-lang": "متساوي الوحدة",
+            "term-name-lang": "متساوي وحدة القياس",
             "term-name-lang-variants": [],
-            "term-definition-lang": "",
+            "term-definition-lang": "عناصر تقرير ذات طبيعة رقمية لديها نفس وحدة القياس.",
             "translation-notes": ""
         },
         "1389d2055f3d4b2174d8ef9508474fa4": {
@@ -530,7 +530,7 @@
             "term-definition": "Value-equal: c-equal items having either the same non-numeric value, or numeric values that are equal within some tolerance defined by the lesser of their respective @precision, implied @precision or @decimals attributes. For a formal definition see Section 4.10 below.",
             "term-name-lang": "متساوي القيمة",
             "term-name-lang-variants": [],
-            "term-definition-lang": "",
+            "term-definition-lang": "عناصر تقرير متساوية المضمون لديها نفس القيمة غير رقمية او الرقمية المتساوية في حدود تفاوت يتم تحديده بالاقل من سمات @precision او @precision الضمنية او  @decimals.",
             "translation-notes": ""
         },
         "5d2193ed854626f63ddae1bad46e13a6": {
@@ -544,9 +544,9 @@
         "9edb31cf028f1e60abb867d8e4d3eb3d": {
             "term-name": "X-Equal",
             "term-definition": "[XPath 1.0]-equal: The XPath \"=\" operator returns the value true. For a formal definition, see Section 4.10 below.",
-            "term-name-lang": "متساوي المسار",
+            "term-name-lang": "متساوي حسب XPath",
             "term-name-lang-variants": [],
-            "term-definition-lang": "",
+            "term-definition-lang": "النتيجة true عند المقارنة بإستخدام علامة المقارنة \"=\" في تعبير XPath.",
             "translation-notes": ""
         },
         "820daa8c9321051cf7c9a2ef55ad00d3": {
