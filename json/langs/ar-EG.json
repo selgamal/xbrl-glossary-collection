@@ -506,8 +506,8 @@
             "term-definition": "A tuple is an element in the substitution group for the XBRL tuple element. Tuples are used to bind together the parts of a compound fact. Those constituent parts are themselves, facts but they must be interpreted in light of each-other. For example, the name, age and compensation of a director of a company need to be grouped together to be correctly understood.",
             "term-name-lang": "مجموعة",
             "term-name-lang-variants": [],
-            "term-definition-lang": "",
-            "translation-notes": "مفردات XBRL تعتمد على نوعين من العناصر 'Item' وهو عبارة عن عنصر منفرد يتضمن قيمة واحدة مثل رصيد النقدية و 'Tuple' وهوعنص متشعب يمكن ان يعبر عن مضمون يحتوي على اكثر من قيمة يجب ان يتم تبويبها معا للتعبير عنها مثل اعضاء مجلس الإدارة."
+            "term-definition-lang": "يتم استخدام عنصر المجموعة لربط اجزاء الحقائق المركبة بعضها ببعض. وتعتبر تلك الاجزاء في حد ذاتها حقائق، ولكين يجب ان يتم تفسرها مع بعضها. على يبيل المثال اسم وسن وراتب مدير في الشركة هي حقائق تحتاج ان يتم ربطها ببعض حتى يتم تفسرها وفهمها بشكل صحيح.",
+            "translation-notes": "مفردات XBRL تعتمد على نوعين من العناصر 'Item' وهو عبارة عن عنصر منفرد يتضمن قيمة واحدة مثل رصيد النقدية و 'Tuple' وهوعنصر متشعب يمكن ان يعبر عن مضمون يحتوي على اكثر من قيمة يجب ان يتم تبويبها معا للتعبير عنها مثل اعضاء مجلس الإدارة."
         },
         "93aa1788746cb2cdf8e8a93963b2e0da": {
             "term-name": "Unit",
@@ -570,15 +570,15 @@
             "term-definition": "The concepts identified by the URI content of the @href attributes of the locator-type elements in the same extended-type link element, which have the same label attribute content as the content of the @from attribute of an arc.",
             "term-name-lang": "مفهوم/مفاهيم جهة المصدر",
             "term-name-lang-variants": [],
-            "term-definition-lang": "",
-            "translation-notes": ""
+            "term-definition-lang": "المفاهيم التي يتم تحديدها عن طريق محتوى سمة @href من عنصر مُحدِد ضمن نفس عنصر الرابط الممتد، ولديها نفس محتوى سمة label الموجودفي محتوى @from من قوس الربط.",
+            "translation-notes": "تعريف تقني مفاده ان عنصر المصدر هو في قوس الربط هو العنصر الذي يعرفه المُحدِد من جهة @from. "
         },
         "2da2b5f30323fa73c69250d0f38a286e": {
             "term-name": "target [concept(s)]",
             "term-definition": "The concepts identified by the URI content of the @href attributes of the locator-type elements in the same extended-type link element, which have the same label attribute content as the content of the @to attribute of an arc.",
             "term-name-lang": "مفهوم/مفاهيم جهة الهدف",
             "term-name-lang-variants": [],
-            "term-definition-lang": "",
+            "term-definition-lang": "المفاهيم التي يتم تحديدها عن طريق محتوى سمة @href من عنصر مُحدِد ضمن نفس عنصر الرابط الممتد، ولديها نفس محتوى سمة label الموجودفي محتوى @to من قوس الربط.",
             "translation-notes": ""
         },
         "6e3d4be723e401ca10ee90f757b814f1": {
@@ -594,7 +594,7 @@
             "term-definition": "Describes an element, attribute, linkbase, schema, instance document or DTS satisfying all applicable mandatory ( MUST ) rules in this document. Any of such artefacts that violates or ignores a recommended ( SHOULD ) rule is inferior to one that obeys it and SHOULD NOT be emulated.",
             "term-name-lang": "مطابق للمواصفات",
             "term-name-lang-variants": [],
-            "term-definition-lang": "",
+            "term-definition-lang": "وصف ينطبق على عنصر، سمة، قاعدة ربط، مخطط، تقرير أو مجموعة مفردات قابلة للإكتشاف تفي بكل المتطليات الإلزامية (المتطلبات المحددة بلفظ MUST) في المواصفات. اي من تلك العناصر لا يفي او يتجاهل المتطلبات الاخرى (المحددة بلفظ SHOULD) هي اقل من المتطلبات الاخرى التي تفي بها.",
             "translation-notes": ""
         },
         "628a818acec05c78da596cf6af60a27a": {
@@ -602,7 +602,7 @@
             "term-definition": "Extensible Business Reporting Language [XBRL 2.1].",
             "term-name-lang": "لغة تقارير الاعمال القابلة للإمتداد",
             "term-name-lang-variants": ["لغة تقارير الاعمال الموسعة"],
-            "term-definition-lang": "",
+            "term-definition-lang": "لغة تقارير الاعمال القابلة للإمتداد",
             "translation-notes": "في العموم اسم لا يترجم ويتم استخدام الحروف الانجليزية"
         },
         "40181017b2538d93b064fc9ff77e6a8e": {
@@ -642,7 +642,7 @@
             "term-definition": "Each one of the possibilities in the domain of a Dimension. Explicit domains are defined by domain-member relations. Example: In the \"Products Dimension\" an explicit domain can be created with each one of the products as a domain-member. Domain member items are in the substitution group of xbrli:item.",
             "term-name-lang": "عضو النطاق / العضو المسموح به",
             "term-name-lang-variants": [],
-            "term-definition-lang": "",
+            "term-definition-lang": "كل من العناصر التي يحتمل ان تكون في نطاف البُعد. النطاقات محددة الاعضاء يتم تعريفها عن طريق علاقة domain-member. مثال: \"بُعد المنتجات\" هو محدد الاعضاء يمكن إنشائه بكل منتج عن طريق domain-member. وتكون عناصر أعضاء النطاق ضمن مجموة التبديل  xbrli:item.",
             "translation-notes": ""
         },
         "9662e2aa95794c370c4ccf2f36680b51": {
@@ -650,7 +650,7 @@
             "term-definition": "Occurs when the domain explicitly names its members. The \"Products Dimension\" in the example above could be an explicit dimension. Explicit dimensions are defined by dimension-domain relations.",
             "term-name-lang": "بعد محدد الاعضاء",
             "term-name-lang-variants": [],
-            "term-definition-lang": "",
+            "term-definition-lang": "عندما يحدد النطاق اسماء اعضائه. مثال \"بُعد المنتجات\" اعلاه هو كثال على بُعد محدد الاعضاء. ويتم تعريف البُعد عن طريف علاقة dimension-domain.",
             "translation-notes": ""
         },
         "cca0513e22e78e891696978c4880b3d8": {
