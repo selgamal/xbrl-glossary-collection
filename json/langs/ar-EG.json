@@ -123,7 +123,7 @@
         },
         "trans-note": {
             "en": "Note:",
-            "ar-EG": "ملحوظة:"
+            "ar-EG": "ملحوظة: "
         },
         "title-1": {
             "en": "Select language to translate terms",
@@ -656,25 +656,25 @@
         "cca0513e22e78e891696978c4880b3d8": {
             "term-name": "Typed Dimension",
             "term-definition": "Occurs when the number of members is impractically large to enumerate explicitly. The \"Longitude and Latitude\" dimensions in the example above are typed dimensions because the domain is made of the infinite numbers in the range of -180 and +180.",
-            "term-name-lang": "بعد محدد نوعية الاعضاء",
+            "term-name-lang": "بُعد محدد نوعية الاعضاء",
             "term-name-lang-variants": [],
-            "term-definition-lang": "",
+            "term-definition-lang": "في حالة ان عدد اعضاء نطاق البُعد يكون ضخم لتحديده بالاسم يتم تحديد نوعية الاعضاء. احداثيات الطورل والعرض تعتبر مثال لبُعد محدد نوعية الاعضاء لان النطاق مكون من عدد لا نهائي من الارقام (الاعضاء) في المدى بين الرقمين -180 و +180.",
             "translation-notes": ""
         },
         "81c38d5df7ccfc94bc3077d28e943fb8": {
             "term-name": "Empty Dimension",
             "term-definition": "An explicit dimension with no domain.",
-            "term-name-lang": "بعد بدون نطاق",
+            "term-name-lang": "بُعد خالي",
             "term-name-lang-variants": [],
-            "term-definition-lang": "",
-            "translation-notes": ""
+            "term-definition-lang": "بُعد محدد الاعضاء بدون نطاق.",
+            "translation-notes": "يتم استخدام البُعد بدون نطاق لوضع قيود في المفردات على استخدام مفاهيم معينة."
         },
         "8c2f21c3210d6cdd89e21a9bf57a6ed0": {
             "term-name": "Primary Item",
             "term-definition": "An [XBRL 2.1] item.",
             "term-name-lang": "عنصر تقرير أولي",
             "term-name-lang-variants": [],
-            "term-definition-lang": "",
+            "term-definition-lang": "عنصر كما تم تعريفه في مواصفات XBRL 2.1.",
             "translation-notes": ""
         },
         "37c277980706672bcc3c43dbc2b8cb29": {
@@ -682,7 +682,7 @@
             "term-definition": "The declaration of [XBRL 2.1] item in a taxonomy.",
             "term-name-lang": "تعريف عنصر تقرير أولي",
             "term-name-lang-variants": [],
-            "term-definition-lang": "",
+            "term-definition-lang": "تعريف عنصر من مواصفات XBRL 2.1 في المفردات.",
             "translation-notes": ""
         },
         "5727216ece28c261dd79eda8fe70d0b0": {
@@ -690,7 +690,7 @@
             "term-definition": "Any child, grand-child etc. of a Primary Item according to the domain-member relationship.",
             "term-name-lang": "منحدر من عنصر تقرير أولي",
             "term-name-lang-variants": [],
-            "term-definition-lang": "",
+            "term-definition-lang": "أي عنصر تابع بشكل مباشر اوغير مباشر لعنصر أولي وفقاً لعلاقة domain-member.",
             "translation-notes": ""
         },
         "1203f900beb5a49974b52926cc475b83": {
@@ -698,7 +698,7 @@
             "term-definition": "A taxonomy that contains Primary Items.",
             "term-name-lang": "مفردات أولية",
             "term-name-lang-variants": [],
-            "term-definition-lang": "",
+            "term-definition-lang": "مفردات تحتوي عللا عناصر أولية.",
             "translation-notes": ""
         },
         "61bf8a69545ed30008adeb549e6c24f2": {
@@ -706,7 +706,7 @@
             "term-definition": "A taxonomy whose schema-rooted DTS includes a definition linkbase with one or more arcs defined in this specification.",
             "term-name-lang": "مفردات ذات أبعاد",
             "term-name-lang-variants": [],
-            "term-definition-lang": "",
+            "term-definition-lang": "مفردات تحتوي مجموعة المفردات القابلة للإكتشاف من خلال مخططها على قاعدة ربط تعريفية تحتوى على قوس ربط تم تعريفه في مواصفات XBRL Dimension.",
             "translation-notes": ""
         },
         "23610854cab369f5ca1e5b3818002203": {
@@ -714,7 +714,7 @@
             "term-definition": "A taxonomy that defines hypercubes and the relationships between the hypercubes and Primary Items.",
             "term-name-lang": "مفردات نموذج",
             "term-name-lang-variants": [],
-            "term-definition-lang": "",
+            "term-definition-lang": "مفردات تُعرف مكعبات متعددة الابعاد وعلاقات بنن مكعبات وعناصر أولية.",
             "translation-notes": ""
         },
         "d3ab9984ef3f4ecfcd8040750945d72f": {
@@ -722,15 +722,15 @@
             "term-definition": "A hypercube represents a set of dimensions. Hypercubes are abstract elements in the substitution group of hypercubeItem that participate in has-hypercube relations and hypercube-dimension relations.",
             "term-name-lang": "مكعب متعدد الأبعاد",
             "term-name-lang-variants": [],
-            "term-definition-lang": "",
+            "term-definition-lang": "يمثل مجموعة من الابعاد. المكعبات متعددة الابعاد هي عناصر مجردة في مجموهة التبديل hypercubeItem والتي تكون طرف في علاقات has-hypercube و hypercube-dimension.",
             "translation-notes": ""
         },
         "e385227654a696306dbfb0d981f9a8a0": {
             "term-name": "Empty Hypercube",
             "term-definition": "A hypercube with no dimensions.",
-            "term-name-lang": "مكعب متعدد الابعاد بدون ابعاد",
+            "term-name-lang": "مكعب متعدد الابعادخالي",
             "term-name-lang-variants": [],
-            "term-definition-lang": "",
+            "term-definition-lang": "مكعب متعدد الابعاد بدون ابعاد",
             "translation-notes": ""
         },
         "b12a3b97f9a4c52601120c5b3e696b14": {
@@ -738,7 +738,7 @@
             "term-definition": "The declaration of a hypercube in a schema document. This is represented by an abstract element declaration in the xbrldt:hypercubeItem substitution group",
             "term-name-lang": "تعريف مكعب متعدد الابعاد",
             "term-name-lang-variants": [],
-            "term-definition-lang": "",
+            "term-definition-lang": "تعريف مكعب متتعدد الابعاد في مخطط. يتم ذلك من خلال تعريف عنصر مجرد في مجموعة تبديل xbrldt:hypercubeItem.",
             "translation-notes": ""
         },
         "0bc73d949b4fda069f67b464b291f49a": {
@@ -746,7 +746,7 @@
             "term-definition": "The declaration of a dimension in a schema document. This is represented by an abstract element declaration in the xbrldt:dimensionItem substitution group",
             "term-name-lang": "تعريف بُعد",
             "term-name-lang-variants": [],
-            "term-definition-lang": "",
+            "term-definition-lang": "تعريف مكعب متتعدد الابعاد في مخطط. يتم ذلك من خلال تعريف عنصر مجرد في مجموعة تبديل xbrldt:dimensionItem.",
             "translation-notes": ""
         },
         "81297aeb1ea2a7a663bad1faf479a473": {
@@ -754,7 +754,7 @@
             "term-definition": "The non XBRL element used in the <segment> or <scenario> element of a <context> as the dimension identifier.",
             "term-name-lang": "عنصر بُعد محدد النوعية",
             "term-name-lang-variants": [],
-            "term-definition-lang": "",
+            "term-definition-lang": "عنصر من خارج عناصر XBRL يُستخدم في عنصر  <segment> أو <scenario> داخل عنصر <context> كامُعرف للبُعد.",
             "translation-notes": ""
         },
         "cc8ae9c5922112b36affb7287f64b4f6": {
@@ -762,23 +762,23 @@
             "term-definition": "A set of relationships constructed by traversing relationships (as described in Section 2.4) not only within base sets but across base sets, thus possibly including relationships from extended-type links with different roles, and relationships with different arc roles.",
             "term-name-lang": "مجموعة العلاقات البُعدية",
             "term-name-lang-variants": [],
-            "term-definition-lang": "",
+            "term-definition-lang": "مجموعة من العلاقات يتم إنشائها من خلال تتبُع ليس فقط العلاقات الموجودة في مجموعة العلاقات الاساسية ولكن في كل المجموعات الاساسية، وبالتالي يحتمل ذلك ان يشتمل على علاقات من روابط ممتدة من أدوار مختلفة وعلاقات من ذات اقواس من انواع مختلفة.",
             "translation-notes": ""
         },
         "20b58c5c19e3be9692fd73c85cbc7f0a": {
             "term-name": "Base Set",
             "term-definition": "As defined in 3.5.3.9.7.3 Networks of relationships in a DTS in [XBRL 2.1].",
-            "term-name-lang": "كل العلاقات لنوع القوس",
+            "term-name-lang": "مجموعة العلاقات الاساسية",
             "term-name-lang-variants": [],
-            "term-definition-lang": "",
-            "translation-notes": ""
+            "term-definition-lang": "كما تم تعريفه في <a href=\"https://www.xbrl.org/Specification/XBRL-2.1/REC-2003-12-31/XBRL-2.1-REC-2003-12-31+corrected-errata-2013-02-20.html#_3.5.3.9.7.3\" target=\"_blank\">3.5.3.9.7.3</a> شبكة العلاقات في مجموعة المفردات في مواصفات XBRL 2.1.",
+            "translation-notes": "مجموعة تحتوي على كل العلاقات لنوع القوس الموجودة في نفس نوع ودور الرابط الممتد"
         },
         "d25055676763657105b9307938b0b3e2": {
             "term-name": "Dimensional Processor",
             "term-definition": "A processor that consumes XBRL dimensional instance documents or taxonomies and checks the conformance of that input document according to the rules declared in this document.",
             "term-name-lang": "معالج بُعدي",
             "term-name-lang-variants": [],
-            "term-definition-lang": "",
+            "term-definition-lang": "مُعالج (برنامج كمبيوتر) يمكنه قراءة تقرير أومفردات XBRL تحتوي على أبعاد ويتحقق من مدى مطابقتها معع مواصفات XBRL Dimensions.",
             "translation-notes": ""
         },
         "4a61689848f07add62967a31ee406606": {
@@ -786,7 +786,7 @@
             "term-definition": "The phrase \"a dimensional processor MUST raise an error\" means that a dimensional processor MUST signal something to the consuming application that is calling the validation process. The specific type of signal is application dependent. An example of how [XPATH 2.0] signals its errors can be seen in http://www.w3.org/TR/xquery-operators/#func-error .",
             "term-name-lang": "التنبيه لخطأ",
             "term-name-lang-variants": [],
-            "term-definition-lang": "",
+            "term-definition-lang": "جملة \"المعالج البُعدي <b>يجب</b> ان ينبه لخطأ\" تعني ان المُعالج يجب ان يعطي إشارةً ما إلى التطبيق الذي طلب التحقق. النوع المحدد لتلك الإشارة يعتمد على التطبيق. مثال على كيف يعطي XPath 2.0 إشارة إلى وجود خطأ يمكن مراجعتها من خلال <a href=\"http://www.w3.org/TR/xquery-operators/#func-error\" target=\"_blank\">http://www.w3.org/TR/xquery-operators/#func-error</a>.",
             "translation-notes": ""
         },
         "65b3031645675903fa011472b04d8a2c": {
