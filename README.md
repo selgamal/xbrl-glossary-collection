@@ -33,3 +33,5 @@ When done with the translation, run the following command to merge the translati
 # requires jinja2
 python page-build.py --make-langs --make-page -o
 ```
+## Usage
+This material is personal effort for personal reference, the materials and all attached files and included code are PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
