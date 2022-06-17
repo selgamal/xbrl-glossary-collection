@@ -8,10 +8,36 @@ function offsetContentsFn() {
   $("#container-elt").css({ "margin-top": height });
 };
 
+function inIframe () {
+  try {
+      return window.self !== window.top;
+  } catch (e) {
+      return true;
+  }
+};
+
 $(document).ready(function () {
   $(window)
     .resize(function () {
-      offsetContentsFn();
+      if (!inIframe()) {
+      offsetContentsFn();} else {
+        $('#hide-defs-cb').prop("checked", false).trigger('change');
+        $('#header-elt').css("position", "unset");
+        $('#container-elt').css("margin-top", "unset");
+        $('#hide-intro-container').css("display", "none");
+        $('#container-elt').css("max-width", "unset");
+        $('#header-elt').css("max-width", "unset");
+        contentOffsetFull = 0;
+        contentOffsetHidden = 0;
+        contentOffset = 0;
+        // offsetContentsFn()
+        console.log('showing definitions');
+        let message = { height: document.body.scrollHeight + 20, width: document.body.scrollWidth };
+        // window.top refers to parent window
+        window.top.postMessage(message, "*");
+        console.log(message);
+        console.log('loaded here');
+      }
     })
     .trigger("resize");
 
