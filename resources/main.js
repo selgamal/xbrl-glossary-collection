@@ -27,6 +27,7 @@ $(document).ready(function () {
         $('#hide-intro-container').css("display", "none");
         $('#container-elt').css("max-width", "unset");
         $('#header-elt').css("max-width", "unset");
+        $('#header-elt').css( "width", "unset");
         contentOffsetFull = 0;
         contentOffsetHidden = 0;
         contentOffset = 0;
@@ -495,4 +496,5 @@ function changeLangAll(menu) {
   intro = allLangs["intro"];
   changeLangIntro(selectedValue, intro, direction);
   $("#langs").val(selectedValue).change();
+  $(window).trigger("resize");
 };
