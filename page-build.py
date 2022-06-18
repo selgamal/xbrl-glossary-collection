@@ -259,7 +259,7 @@ def encodeB64Files():
     
     return {'allLangs': doEncode(all_langs_dict_text), 'cssFile': doEncode(css), 'jsFile': doEncode(js)}
 
-def makeMainPage(saveTo = './docs/xbrl-glossary-collection.html'):
+def makeMainPage(saveTo = './docs/xbrl-glossary-collection.html', modifiedDate=None):
     templates_folder = 'templates'
     template_name = 'main_template.html'
     
@@ -286,14 +286,18 @@ def makeMainPage(saveTo = './docs/xbrl-glossary-collection.html'):
                 translator_dict['lang'] = lang
                 translators.append(translator_dict)
 
-    lastupdateDate = str(datetime.datetime.now().date())
+    lastUpdateDate = str(datetime.datetime.now().date())
     lastUpdateDateString = datetime.datetime.now().date().strftime('%B %Y')
+    if modifiedDate:
+        from dateutil import parser
+        lastUpdateDate = modifiedDate
+        lastUpdateDateString = parser.parse(lastUpdateDate).date().strftime('%B %Y')
 
     output = template.render(intro=x_text['intro'], 
                             dir="ltr", glossary=x_text['glossary'], 
                             lang='en', langs=x_text['langs'],
                             sources=sources,
-                            icons=icons, lastupdateDate=lastupdateDate, 
+                            icons=icons, lastupdateDate=lastUpdateDate, 
                             lastUpdateDateString=lastUpdateDateString,
                             author = "Sherif M. ElGamal",
                             translators = translators,
@@ -372,6 +376,8 @@ def main():
                         help=('build html page'))
     parser.add_argument('--page-save', type=str, dest='pageSave', default='./docs/xbrl-glossary-collection.html',
                         help=('HTML save location, defaults to ./docs/xbrl-glossary-collection.html'))
+    parser.add_argument('--update-date', type=str, dest='updateDate',
+                        help=('Optional last update date in format "yyyy-mm-dd" if not entered current date is used'))
     parser.add_argument('--merge-trans-files', dest='mergeTrans', default=False, action="store_true",
                         help=('merge an old translation file with new one, translator info to be added manually as a new dict'))
     parser.add_argument('--old', type=str, dest='oldTemplate', help=('old translation file'))
@@ -396,7 +402,7 @@ def main():
     if opts.makeAllLangs:
         makeAllLangsDict(saveFolder=opts.makeAllLangsFolder, overWrite=opts.overWrite)
     if opts.makePage:
-        makeMainPage(saveTo=opts.pageSave)
+        makeMainPage(saveTo=opts.pageSave, modifiedDate=opts.updateDate)
 
     if opts.mergeTrans:
         mergeTranslationTemplates(
