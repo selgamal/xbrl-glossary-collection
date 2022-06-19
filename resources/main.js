@@ -16,11 +16,18 @@ function inIframe () {
   }
 };
 
+
 $(document).ready(function () {
   $(window)
     .resize(function () {
       if (!inIframe()) {
       offsetContentsFn();} else {
+        window.addEventListener('message', function(e) {
+          let message = e.data;
+          if (message === 'ar') {
+            $("#langs-menu").prop("value", "ar-EG").trigger('change');
+          };
+        } , false);
         $('#hide-defs-cb').prop("checked", false).trigger('change');
         $('#header-elt').css("position", "unset");
         $('#container-elt').css("margin-top", "unset");
@@ -36,7 +43,7 @@ $(document).ready(function () {
         let message = { height: document.body.scrollHeight + 20, width: document.body.scrollWidth };
         // window.top refers to parent window
         window.top.postMessage(message, "*");
-        console.log(message);
+        // console.log(message);
         console.log('loaded here');
       }
     })
