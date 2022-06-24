@@ -21,22 +21,25 @@ $(document).ready(function () {
   $(window)
     .resize(function () {
       if (!inIframe()) {
-      offsetContentsFn();} else {
+        offsetContentsFn();} else {
         window.addEventListener('message', function(e) {
           let message = e.data;
+          console.log("AAAAAAAAAAAAAAAA:" + message)
           if (message === 'ar') {
             $("#langs-menu").prop("value", "ar-EG").trigger('change');
+            $('#langs-menu').css( "left", "0");
+          } else {
+            $('#langs-menu').css( "right", "0");
           };
         } , false);
-        $('#doc-abstract, #credits, #update-date, #hide-intro-container, #header-elt hr').css( "display", "none");
+        $('#doc-title, #credits, #update-date, #hide-intro-container, #header-elt hr').css( "display", "none");
         $('#hide-defs-cb').prop("checked", false).trigger('change');
         $('#header-elt').css("position", "unset");
         $('#container-elt').css("margin-top", "unset");
         $('#container-elt').css("max-width", "unset");
         $('#header-elt').css("max-width", "unset");
         $('#header-elt').css( "width", "unset");
-        $('#doc-title').css( "visibility", "hidden", "font-size", "0.5em");
-        $('#langs-menu').css( "right", "0");
+        $('#doc-abstract').css( "visibility", "hidden", "font-size", "0.5em");
         $('#langs-menu').css( "margin-top", "0");
 
         contentOffsetFull = 0;
