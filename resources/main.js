@@ -28,19 +28,23 @@ $(document).ready(function () {
             $("#langs-menu").prop("value", "ar-EG").trigger('change');
           };
         } , false);
+        $('#doc-abstract, #credits, #update-date, #hide-intro-container, #header-elt hr').css( "display", "none");
         $('#hide-defs-cb').prop("checked", false).trigger('change');
         $('#header-elt').css("position", "unset");
         $('#container-elt').css("margin-top", "unset");
-        $('#hide-intro-container').css("display", "none");
         $('#container-elt').css("max-width", "unset");
         $('#header-elt').css("max-width", "unset");
         $('#header-elt').css( "width", "unset");
+        $('#doc-title').css( "visibility", "hidden", "font-size", "0.5em");
+        $('#langs-menu').css( "right", "0");
+        $('#langs-menu').css( "margin-top", "0");
+
         contentOffsetFull = 0;
         contentOffsetHidden = 0;
         contentOffset = 0;
         // offsetContentsFn()
         console.log('showing definitions');
-        let message = { height: document.body.scrollHeight + 20, width: document.body.scrollWidth };
+        let message = { height: document.body.scrollHeight + 30, width: document.body.scrollWidth };
         // window.top refers to parent window
         window.top.postMessage(message, "*");
         // console.log(message);
